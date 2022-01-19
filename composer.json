@@ -1,0 +1,34 @@
+{
+    "name": "niman2d/braintree-gateway",
+    "autoload": {
+        "psr-4": {
+            "NimaN2D\\BraintreeGateway\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NimaN2D\\BraintreeGateway\\Tests\\": "tests",
+            "NimaN2D\\BraintreeGateway\\Database\\Factories\\": "src/database/factories"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NimaN2D\\BraintreeGateway\\BraintreeGatewayServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Nima Nouri (NimaN2D)",
+            "email": "nima.nouri.d@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "orchestra/testbench": "^6.24"
+    },
+    "require": {
+        "braintree/braintree_php": "^6.5"
+    }
+}
